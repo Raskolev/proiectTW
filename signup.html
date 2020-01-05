@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="stylesheet" href="./style3.css"/>
+  <title>Un fel de proiect</title>
+</head>
+<div style = "position:fixed; left:80px; top:20px;">
+       <button value="Go back!" onclick="history.back()"> back</button>   
+      </div>
+<body >
+
+ <div class="parent">
+    <form onsubmit="return (checkForm(this) && false);" action="/javascript/validate-password/" method="POST">
+        <fieldset>
+            <legend>Change Password</legend>
+            <div>
+                <label>Username</label>
+                <span>
+                    <input type="text" name="username">
+                </span>
+                <label>Password</label>
+                <span>
+                    <input type="password" name="pwd1">
+                </span>
+                <label>Confirm Password</label>
+                <span>
+                    <input type="password" name="pwd2">
+                </span>
+                <span>
+               <button type="submit" value="Register" id="Sign" class="signupbtn">Sign up</button>
+        <button type="button" id="CloseButton" class="cancelbtn">Cancel</button>
+                </span>
+                <hr class="clearfix">
+            </div> 
+            <p>Passwords must contain at least six characters, including uppercase, lowercase letters and numbers.</p>
+        </fieldset>
+    </form>
+</div>
+      <label>        
+        <input type="checkbox" checked="checked" name="terms" style="margin-bottom:15px"> Agree to our <a href="toobad.html" style="color:dodgerblue">Terms & Privacy</a>
+      </label>
+</div>
+<script src="apps.js"></script>
+</body>
+</html>
